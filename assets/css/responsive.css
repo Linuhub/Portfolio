@@ -1,0 +1,102 @@
+/* Ipad pro <=... */
+@media (min-width: 980px) {
+    .sidebar {
+        display: block;
+    }
+
+    .header {
+        display: none;
+    }
+
+    .cover {
+        display: none;
+    }
+
+    .sidebar__delete-btn {
+        display: none;
+    }
+}
+
+/* Mobile + Ipad */
+@media (max-width: 979px) {
+    .portfolio {
+        flex-direction: column;
+    }
+    
+    .header {
+        display: flex;
+    }
+    
+    #header-input {
+        display: none;
+    }
+    
+    .header--icon:checked ~ .sidebar {
+        display: block;
+    }
+    
+    #header-input:checked ~ .sidebar,
+    #header-input:checked ~ .cover {
+        display: block;
+    }
+    
+    .content {
+        width: 100%;
+        margin: 0;
+    }
+
+    .about-paragraph__description {
+        text-align: justify;
+    }
+
+    .footer-info {
+        padding: 36px 30px;
+    }
+
+    .footer-title--first,
+    .footer-content,
+    .footer-link {
+        padding-left: 0;
+    }
+}
+
+/* Tablet <=...<= Ipad */
+@media (min-width: 600px) and (max-width: 979px) {
+}
+
+/*  ...<= Mobile */
+@media (max-width: 599px) {
+    .portfolio-filter-item {
+        display: none;
+    }
+
+    .portfolio-filter-item:nth-child(1), 
+    .portfolio-filter-item:nth-child(2) {
+        display: flex;
+    } 
+
+    .about-wrap-img {
+        flex-direction: column;
+    }
+
+    .about-image {
+        width: 100%;
+    }
+
+    .about-form__wrap {
+        flex-direction: column;
+    }
+
+    .about-form__ticket {
+        width: 100%;
+        margin: 0 0 16px 0;
+    }
+
+    .contact-wrap {
+        flex-direction: column;
+    }
+
+    .contact-method {
+        width: 100%;
+    }
+}
